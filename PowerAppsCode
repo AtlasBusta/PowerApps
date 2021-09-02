@@ -1,0 +1,10 @@
+*control to modify propterties of other controls
+dropdown box
+Items property from DropDownSample to:
+Table({Position:"Top"},{Position:"Bottom"},{Position:"Middle"})
+
+*thing to control with previous dropdown
+change Y property of object to:
+If(Dropdown1.Selected.Position ="Top",150,Dropdown1.Selected.Position = "Bottom",650,400)
+
+*Conditional Formatting
