@@ -31,4 +31,39 @@ If(Label5.Text = "PASS", Color.DarkGreen,Color.DarkRed)
  If(ThisItem.TestScore = "A" Or ThisItem.TestScore = "B",false,true)
  
  understanding true and false
- 
+ instert slider control and smiley icon
+ Visible property on smiley icon
+ Slider1.Value >= 50 evaluates to true or false
+ 2 + 2 = 4 evaluates to true
+Not(2+2 = 4) evaluates to false
+On the same canvas insert an Emoji-Frown Icon control.
+Set the Visible property to: Not(Icon1.Visible)
+
+understanding contol behaviors and actions
+Navigate(HomeScreen,ScreenTransition.Cover)
+
+performing multiple actions in a formula
+If(Sum(Value(TextInput1.Text),Value(TextInput2.Text)) >50,"PASS","FAIL")
+to combine more than one action in a formula, use the semicolon ;
+add UpdateContect to the previous navigation control
+UpdateContext( { x: 1 } ); Navigate(Screen2,ScreenTransition.Cover)
+
+control the display through a formula
+DisplayMode.Disabled
+DisplayMode.Edit
+DisplayMode.View
+
+use controls and functions to create a dnamic formula
+add two buttons, an inputtext, and a label
+button1
+OnSelect -- UpdateContext({RunningTotal: RunningTotal + TextInput7})
+button2
+Onselect -- UpdateContext( { RunningTotal: 0 } )
+DisplayMode -- If(RunningTotal>0,DisplayMode.Edit,DisplayMode.Disabled)
+or
+DisplayMode -- If(Value(Label2.Text) > 0, DisplayMode.Edit, DisplayMode.Disabled)
+
+author a formula for tables and records
+
+
+
