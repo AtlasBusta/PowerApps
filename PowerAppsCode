@@ -1,3 +1,5 @@
+PowerApps Code formulas
+
 *control to modify propterties of other controls
 dropdown box
 Items property from DropDownSample to:
@@ -8,3 +10,17 @@ change Y property of object to:
 If(Dropdown1.Selected.Position ="Top",150,Dropdown1.Selected.Position = "Bottom",650,400)
 
 *Conditional Formatting
+Label Color property
+If(Sum(Value(TextInput2.Text),Value(TextInput3.Text)) >50,Color.DarkGreen,Color.DarkRed)
+or
+If(Label5.Text = "PASS", Color.DarkGreen,Color.DarkRed)
+
+*Functions for validating data
+ IsBlank, IsBlankOrError, IsEmpty, IsNumeric, IsToday, and IsMatch functions
+ Check valid email address:
+ add tect input and a button
+ Modify the DisplayMode property of the Button control to the following formula
+ If(IsMatch(TextInput1_1.Text, Email), DisplayMode.Edit,DisplayMode.Disabled)
+ 
+ CHANGE BEHAVIOR FORMULAS
+ 
