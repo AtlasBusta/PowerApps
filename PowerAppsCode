@@ -23,4 +23,12 @@ If(Label5.Text = "PASS", Color.DarkGreen,Color.DarkRed)
  If(IsMatch(TextInput1_1.Text, Email), DisplayMode.Edit,DisplayMode.Disabled)
  
  CHANGE BEHAVIOR FORMULAS
+ DisplayMode and or Visible properties
+ Button control OnSelect property
+ ClearCollect(TestScoresCollection,{Name:"Student 1", TestScore:"B"},{Name:"Student 2", TestScore:"C"},{Name:"Student 3",TestScore:"A"},{Name:"Student 4", TestScore:"C"},{Name:"Student 5", TestScore:"A"})
+ add button inside gallery that only shows when condition is met
+ Visible property
+ If(ThisItem.TestScore = "A" Or ThisItem.TestScore = "B",false,true)
+ 
+ understanding true and false
  
